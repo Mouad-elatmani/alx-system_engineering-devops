@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -r /tmp/mu_first_directory
+rm -rd /tmp/mu_first_directory
