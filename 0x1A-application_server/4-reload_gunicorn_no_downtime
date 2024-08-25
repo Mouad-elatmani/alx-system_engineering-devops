@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# renewed all the workers of Gunicorn 
-kill -HUP "$(pgrep gunicorn | awk '{print $1}')"
+# Script to reload Gunicorn configurations and restart workers
+# without killing master processes
+pkill -HUP gunicorn
